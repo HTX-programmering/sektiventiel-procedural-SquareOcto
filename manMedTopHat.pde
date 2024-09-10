@@ -65,7 +65,7 @@ void legs(float x, float y)
 
 void draw() 
 {
-  float x = 400;
+  float x = 400; // Disse værdier er bestemt af brugeren
   float y = 20;
   
   body(x, y);
