@@ -1,14 +1,35 @@
+// Her er lige et par fif
+// ingen ; efter }
+// Og vi vil gerne have funktionerne setup() og draw() efter hianden
+
 void setup() 
 {
   size(1980, 1200);
-};
+}
+
+void draw() 
+{
+  float x = 400; // Disse værdier er bestemt af brugeren
+  float y = 20;
+  
+  body(x, y);
+  arms(x, y);
+  legs(x, y);
+  head(x, y);
+  hat(x, y);
+  mouth(x, y);
+  eyes(x, y);
+  nose(x, y);
+  lines(x, y);
+}
+
 
 void head(float x, float y) 
 {
   fill(255);
   strokeWeight(1);
   ellipse(200 + x, 380 + y, 350, 400);
-};
+}
 
 void hat(float x, float y)
 {
@@ -63,18 +84,4 @@ void legs(float x, float y)
   
 }
 
-void draw() 
-{
-  float x = 400; // Disse værdier er bestemt af brugeren
-  float y = 20;
-  
-  body(x, y);
-  arms(x, y);
-  legs(x, y);
-  head(x, y);
-  hat(x, y);
-  mouth(x, y);
-  eyes(x, y);
-  nose(x, y);
-  lines(x, y);
-};
+
